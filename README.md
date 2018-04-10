@@ -20,3 +20,10 @@ or
 Generate a csdms-stack recipe::
 
     $ cookiecutter https://github.com/csdms-stack/cookiecutter-csdms-stack.git
+
+Then:
+* Create a repo and put it there
+* Add the repo to csdms-stack [Travis-CI](https://travis-ci.org) account
+* Run the Travis CLI command
+
+    $ travis encrypt --add "ANACONDA_TOKEN=<token>"
