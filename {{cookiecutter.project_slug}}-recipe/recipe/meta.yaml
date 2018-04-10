@@ -1,0 +1,28 @@
+package:
+  name: {{ cookiecutter.project_slug }}
+  version: {{ cookiecutter.project_version }}
+
+source:
+  git_url: https://github.com/csdms/{{ cookiecutter.project_slug }}
+  git_rev: v{{ cookiecutter.project_version }}
+
+requirements:
+  build:
+    - setuptools
+  host:
+    - python
+
+test:
+  imports:
+    - {{ cookiecutter.project_slug }}
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
+about:
+  home: https://github.com/csdms/{{cookiecutter.project_slug}}
+  license: MIT
+  license_file: LICENSE
+  summary: {{ cookiecutter.project_short_description }}
+  dev_url: https://github.com/csdms/{{cookiecutter.project_slug}}
