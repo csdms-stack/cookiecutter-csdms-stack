@@ -15,7 +15,7 @@ Install the latest Cookiecutter if you haven't installed it yet
 
 or
 
-    $ conda install cookiecutter
+    $ conda install cookiecutter -c conda-forge
 
 Generate a csdms-stack recipe::
 
