@@ -1,5 +1,8 @@
 {
   "project_slug": "unknown",
   "project_version": "0.1",
-  "project_short_description": "Summary of the project"
+  "url": "{{ ['https://github.com/csdms/', cookiecutter.project_slug, '/archive/v', cookiecutter.project_version, '.tar.gz']|join }}",
+  "project_short_description": "Summary of the project",
+  "home": "{{ ['https://github.com/csdms/', cookiecutter.project_slug]|join }}",
+  "dev_url": "{{ cookiecutter.home }}"
 }
