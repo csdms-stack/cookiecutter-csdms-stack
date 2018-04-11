@@ -17,8 +17,7 @@ before_install:
     rm -rf $(brew --cache)
   fi
 install:
-- curl https://raw.githubusercontent.com/csdms/ci-tools/master/install_miniconda.sh
-- bash ./install_miniconda.sh -b -f -p $(pwd)/.conda
+- curl https://raw.githubusercontent.com/csdms/ci-tools/master/install_miniconda.sh | bash -s - -b -f -p $(pwd)/.conda
 - export PATH="$(pwd)/.conda/bin:$PATH"
 - hash -r
 - conda create -n _testing python=$TRAVIS_PYTHON_VERSION && source activate _testing
