@@ -26,4 +26,4 @@ Then:
 * Add the repo to csdms-stack [Travis-CI](https://travis-ci.org) account
 * Run the Travis CLI command
 
-    $ travis encrypt --add "ANACONDA_TOKEN=<token>"
+      $ travis encrypt --add "ANACONDA_TOKEN=<token>"
