@@ -21,7 +21,7 @@ build:
 
 about:
   home: {{ cookiecutter.home }}
-  license: MIT
+  license: {{ cookiecutter.package_license }}
   license_file: LICENSE
   summary: {{ cookiecutter.project_short_description }}
   dev_url: {{ cookiecutter.dev_url }}
